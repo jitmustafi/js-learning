@@ -16,3 +16,12 @@ function hello(name) {
 
 const fncall = hello("jit");
 console.log(fncall);
+
+//REST operator
+
+function calculateCartPrice(...num) {
+    return num;
+}
+
+const totalPrice = calculateCartPrice(200, 300, 400);
+console.log(totalPrice);
