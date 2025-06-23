@@ -1,16 +1,15 @@
-let s = "0Ok,o0";
+let s = "race a car";
 s = s.toLowerCase();
-let filtered = [];
+let sString = "";
 for(const i of s) {
-    console.log(i.charCodeAt());
-    
     if((i.charCodeAt() < 123 && i.charCodeAt() > 96) || (i.charCodeAt() < 58 && i.charCodeAt() > 47)) {
-        filtered.push(i);
+        sString.join(i);
+        console.log(sString);
+        
     }
 }
 
-let sString = filtered.join('');
-let rString = filtered.reverse().join('');
+let rString = sString.split('').reverse().join('');
 
 if(sString === rString) {
     console.log(true);
